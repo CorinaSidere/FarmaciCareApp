@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/intakecare_bkgr"
+    android:orientation="vertical"
+    tools:context="com.example.intakecare3.pharmacyphase.PharmacyMedicineDetailsActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnPrevious"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="-10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/previous_back_svgrepo_com" />
+
+        <TextView
+            android:id="@+id/tvMedNameAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:text="Medicine dosage:"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMedDosageAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-180dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="Number of doses\n per day:"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNumbDosesAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="85dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-200dp"
+            android:layout_marginTop="140dp"
+            android:gravity="center"
+            android:text="Total number of\n doses:"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNumbTotalDosesAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="145dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/btnFlagG"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/dot_green" />
+
+        <ImageView
+            android:id="@+id/btnFlagO"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/dot_orange" />
+
+        <ImageView
+            android:id="@+id/btnFlagR"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-50dp"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/dot_red" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-345dp"
+            android:layout_marginTop="210dp"
+            android:gravity="center"
+            android:text="Product code:"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvProductCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="210dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="-175dp"
+            android:layout_marginTop="270dp"
+            android:gravity="center"
+            android:text="Expiration date:"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvExpirationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="270dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/btnFlagGreen"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="265dp"
+            android:src="@drawable/dot_green" />
+
+        <ImageView
+            android:id="@+id/btnFlagOrange"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="265dp"
+            android:src="@drawable/dot_orange" />
+
+        <ImageView
+            android:id="@+id/btnFlagYellow"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="265dp"
+            android:src="@drawable/dot_yellow" />
+
+        <ImageView
+            android:id="@+id/btnFlagRed"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="265dp"
+            android:src="@drawable/dot_red" />
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-350dp"
+            android:layout_marginTop="320dp"
+            android:gravity="center"
+            android:text="Lot number:"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvLotNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="320dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-170dp"
+            android:layout_marginTop="370dp"
+            android:gravity="center"
+            android:text="Serial number:"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSerialNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="370dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTakePill"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/white"
+        android:text="Take pill"
+        android:textColor="#006666"
+        app:cornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <Button
+        android:id="@+id/btnTakePillOrange"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        android:backgroundTint="@color/orange"
+        android:text="Take pill"
+        android:textColor="#006666"
+        app:cornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnTakePill" />
+
+    <Button
+        android:id="@+id/btnTakePillRed"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/red"
+        android:text="Take pill"
+        android:textColor="#006666"
+        app:cornerRadius="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

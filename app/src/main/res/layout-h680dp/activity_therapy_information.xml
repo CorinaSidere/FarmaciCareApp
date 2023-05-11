@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.example.intakecare3.therapiesphase.TherapyInformationActivity">
+
+<ImageView
+    android:id="@+id/btnPrevious"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="100dp"
+    android:src="@drawable/previous_back_svgrepo_com"/>
+    <ImageView
+        android:id="@+id/goToHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/home_house_svgrepo_com"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="-50dp"/>
+
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardViewTherapy"
+    android:layout_width="380dp"
+    android:layout_height="200dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/intakecare_bkgr"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/cardViewTherapyInforMore"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/nameOfDrug"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:gravity="left"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.049"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/Posology"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameOfDrug" />
+
+        <TextView
+            android:id="@+id/stateOfMedicine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="35dp"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            app:layout_constraintStart_toEndOf="@+id/view3"
+            app:layout_constraintTop_toBottomOf="@+id/nameOfDrug" />
+
+        <TextView
+            android:id="@+id/startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/white"
+            android:textSize="19dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameOfDrug" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/simple_line"
+            app:layout_constraintStart_toEndOf="@+id/Posology"
+            app:layout_constraintTop_toBottomOf="@+id/nameOfDrug" />
+
+
+        <!--    <View
+            android:id="@+id/view4"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/simple_line"
+            app:layout_constraintStart_toEndOf="@+id/stateOfMedicine"
+            app:layout_constraintTop_toBottomOf="@+id/nameOfDrug" /> !-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewTherapyInforMore"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="100dp"
+        app:cardBackgroundColor="@color/intakecare_bkgr"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardViewTherapy"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/listview_background_shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Posology" />
+
+        <TextView
+            android:id="@+id/scheduleType"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/very_dark_green"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/listview_background_shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Posology" />
+
+        <TextView
+            android:id="@+id/maxDelay"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/very_dark_green"
+            android:textSize="20dp" />
+
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/listview_background_shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Posology" />
+
+        <TextView
+            android:id="@+id/Meals"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:textColor="@color/very_dark_green"
+            android:textSize="20dp" />
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/listview_background_shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Posology" />
+
+        <TextView
+            android:id="@+id/Validation"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:textColor="@color/very_dark_green"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="150dp"
+            android:text="At:"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <View
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/listview_background_shape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Posology" />
+
+        <TextView
+            android:id="@+id/schTime"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="140dp"
+            android:gravity="center"
+            android:textColor="@color/very_dark_green"
+            android:textSize="20dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewTherapyAdherence"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/intakecare_bkgr"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="-100dp"
+        app:cardElevation="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adherence\n Level:"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="25dp"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewTherapyInfoMore"
+        android:layout_width="170dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="115dp"
+        android:layout_marginTop="-100dp"
+        android:layout_marginRight="15dp"
+        app:cardBackgroundColor="@color/light_orange"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <TextView
+            android:id="@+id/adherencePercent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/orange"
+            android:background="@drawable/rectangle_adherence"
+            android:textSize="45dp"
+            android:gravity="center"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
